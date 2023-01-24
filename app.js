@@ -24,18 +24,17 @@ camera3.position.z = radius * Math.sin(angle);
 /* =============================== Set up Audio ============================= */
 
 const listener = new THREE.AudioListener();
-camera3.add( listener );
+camera3.add(listener);
 
 const sound = new THREE.Audio( listener );
 
 const audioLoader = new THREE.AudioLoader();
-audioLoader.load( '/home/linhwatson/immersive/mvp/soundtrack.mp3', function( buffer ) {
+audioLoader.load( "/home/linhwatson/immersive/mvp/soundtrack.mp3", function( buffer ) {
 	sound.setBuffer( buffer );
 	sound.setLoop( true );
 	sound.setVolume( 0.5 );
 	sound.play();
 });
-
 
 /* ================================= Generate Galaxy ================================== */
 
@@ -169,18 +168,6 @@ function onResults(results) {
       obj.children[e + 21].position.z = .6 + results.multiHandLandmarks[0][e].z;
     }
 
-    // results.multiHandLandmarks[0][7].y > results.multiHandLandmarks[0][5].y &&
-    // results.multiHandLandmarks[0][0].y > results.multiHandLandmarks[0][7].y &&
-    // results.multiHandLandmarks[0][19].y > results.multiHandLandmarks[0][17].y &&
-    // results.multiHandLandmarks[0][0].y > results.multiHandLandmarks[0][19].y &&
-    // (angle += 0.03, camera3.position.x = radius * Math.cos(angle), camera3.position.z = radius * Math.sin(angle))
-
-    // results.multiHandLandmarks[1][7].y > results.multiHandLandmarks[1][5].y &&
-    // results.multiHandLandmarks[1][0].y > results.multiHandLandmarks[1][7].y &&
-    // results.multiHandLandmarks[1][19].y > results.multiHandLandmarks[1][17].y &&
-    // results.multiHandLandmarks[1][0].y > results.multiHandLandmarks[1][19].y &&
-    // (angle -= 0.03, camera3.position.x = radius * Math.cos(angle), camera3.position.z = radius * Math.sin(angle))
-
     if (
     results.multiHandLandmarks[0][7].y > results.multiHandLandmarks[0][5].y &&
     results.multiHandLandmarks[0][0].y > results.multiHandLandmarks[0][7].y &&
@@ -215,17 +202,6 @@ function onResults(results) {
       obj.children[g].position.z = 1;
     }
 
-    // for (let h of (
-    //   finger1 = results.multiHandLandmarks[0][4],
-    //   finger2 = results.multiHandLandmarks[0][12],
-    //   finger3 = results.multiHandLandmarks[0][8],
-    //   dist12 = Math.sqrt(Math.pow(finger1.x - finger2.x, 2) + Math.pow(finger1.y - finger2.y, 2) + Math.pow(finger1.z - finger2.z, 2)),
-    //   dist13 = Math.sqrt(Math.pow(finger1.x - finger3.x, 2) + Math.pow(finger1.y - finger3.y, 2) + Math.pow(finger1.z - finger3.z, 2)),
-
-    //   dist12 < 0.1 && setTimeout(void(dist13 < 0.1 && (null == scene.getObjectByName('pts') ? scene.add(points) : (scene.add(moon), scene.add(venus), scene.add(mercury), scene.add(sun), scene.add(pointLight)))), 700),
-    //   results.multiHandLandmarks
-    // ))
-
     for (let h of results.multiHandLandmarks) {
       finger1 = results.multiHandLandmarks[0][4];
       finger2 = results.multiHandLandmarks[0][12];
@@ -234,7 +210,6 @@ function onResults(results) {
       dist13 = Math.sqrt(Math.pow(finger1.x - finger3.x, 2) + Math.pow(finger1.y - finger3.y, 2) + Math.pow(finger1.z - finger3.z, 2));
 
       dist12 < 0.1 && setTimeout(void(dist13 < 0.1 && (null == scene.getObjectByName('pts') ? scene.add(points) : (scene.add(pluto), scene.add(earth), scene.add(jupiter), scene.add(neptune), scene.add(venus), scene.add(mercury), scene.add(sun), scene.add(pointLight)))), 700);
-      // results.multiHandLandmarks
 
       for (let f = 0; f < 21; f++) {
         obj.children[f].position.x = -h[f].x;
@@ -242,18 +217,7 @@ function onResults(results) {
         obj.children[f].position.z = 0.6 + h[f].z;
       }
     }
-
-    // dist12 < 0.1 && setTimeout(void((dist13 = Math.sqrt(Math.pow(finger1.x - finger3.x, 2) + Math.pow(finger1.y - finger3.y, 2) + Math.pow(finger1.z - finger3.z, 2))) < .1 && (null == scene.getObjectByName('pts') ? scene.add(points) : (scene.add(moon), scene.add(venus), scene.add(mercury), scene.add(sun), scene.add(pointLight)))), 700),
-    // results.multiHandLandmarks))
-
-    // for (let f = 0; f < 21; f++) {
-    //   obj.children[f].position.x = -h[f].x;
-    //   obj.children[f].position.y = -h[f].y;
-    //   obj.children[f].position.z = 0.6 + h[f].z;
-    // }
   }
-
-  // line1 = new THREE.Line(b, c);
 }
 
 line1 = new THREE.Line(b, c);
