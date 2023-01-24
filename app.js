@@ -1,6 +1,5 @@
 const videoElement = document.getElementsByClassName('input_video')[0];
 
-
 const scene = new THREE.Scene;
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer();
@@ -122,19 +121,19 @@ let line = new THREE.Line(b, c);
 
 var rank = new Array(0, 1, 2, 3, 4, 3, 2, 5, 6, 7, 8, 7, 6, 5, 9, 10, 11, 12, 11, 10, 9, 13, 14, 15, 16, 15, 14, 13, 17, 18, 19, 20, 19, 18, 17, 0, 21, 22, 23, 24, 25, 24, 23, 26, 27, 28, 29,28, 27, 26, 30, 31, 32, 33, 32, 31, 30, 34, 35, 36, 37, 36, 35, 34, 38, 39, 40, 41, 40, 39, 38, 21);
 
-for (i = 0; i < rank.length; i++) {
+for (let i = 0; i < rank.length; i++) {
   b.vertices.push(obj.children[rank[i]].position);
 }
 
 function onResults(results) {
   if (results.multiHandLandmarks.length === 2) {
-    for (let e = 0; e < 21; e++) {
-      obj.children[e].position.x = -results.multiHandLandmarks[0][e].x,
-      obj.children[e].position.y = -results.multiHandLandmarks[0][e].y,
-      obj.children[e].position.z = .6 + results.multiHandLandmarks[0][e].z,
-      obj.children[e + 21].position.x = -results.multiHandLandmarks[1][e].x,
-      obj.children[e + 21].position.y = -results.multiHandLandmarks[1][e].y,
-      obj.children[e + 21].position.z = .6 + results.multiHandLandmarks[0][e].z;
+    for (let i = 0; i < 21; i++) {
+      obj.children[i].position.x = -results.multiHandLandmarks[0][i].x,
+      obj.children[i].position.y = -results.multiHandLandmarks[0][i].y,
+      obj.children[i].position.z = .6 + results.multiHandLandmarks[0][i].z,
+      obj.children[i + 21].position.x = -results.multiHandLandmarks[1][i].x,
+      obj.children[i + 21].position.y = -results.multiHandLandmarks[1][i].y,
+      obj.children[i + 21].position.z = .6 + results.multiHandLandmarks[0][i].z;
     }
 
     if (
