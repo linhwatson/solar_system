@@ -21,21 +21,6 @@ let angle = 1.57;
 camera3.position.x = radius * Math.cos(angle);
 camera3.position.z = radius * Math.sin(angle);
 
-/* =============================== Set up Audio ============================= */
-
-const listener = new THREE.AudioListener();
-camera3.add(listener);
-
-const sound = new THREE.Audio( listener );
-
-const audioLoader = new THREE.AudioLoader();
-audioLoader.load( "/home/linhwatson/immersive/mvp/soundtrack.mp3", function( buffer ) {
-	sound.setBuffer( buffer );
-	sound.setLoop( true );
-	sound.setVolume( 0.5 );
-	sound.play();
-});
-
 /* ================================= Generate Galaxy ================================== */
 
 const generateGalaxy = () => {
