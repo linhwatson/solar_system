@@ -1,10 +1,11 @@
 # :ringed_planet: Visualizing our Solar System 
 
-## :pencil2: Table of Contents
+## :sunflower: Project Overview
+:exploding_head: Have you ever wished that you could create a whole universe with your hands? 
 
-* [Project Overview](#project-overview)
-* [Project Details](#project-details)
-* [Future Optimizations](#roadmap---future-optimizations)
+Seems impossible but you DEFINITELY CAN!! 
+
+The objective of this project is to deliver a simple and fun demonstration of our beautiful solar system in a special way. 
 
 ## :tickets: Tech Stack
 
@@ -12,13 +13,6 @@
 ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)
 ![ThreeJS](https://img.shields.io/badge/threejs%20-black?style=for-the-badge&logo=three.js&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/mediapipe%20-yellow?style=for-the-badge&logo=medium&logoColor=white)
-
-## :sunflower: Project Overview
-:exploding_head: Have you ever wished that you could create a whole universe with your hands? 
-
-Seems impossible but you DEFINITELY CAN!! 
-
-The objective of this project is to deliver a simple and fun demonstration of our beautiful solar system in a special way. 
 
 ## :muscle: Motivation
 This project was created within a 2-day period (less than 24 hours) as part of the Hack Reactor's curriculum.
