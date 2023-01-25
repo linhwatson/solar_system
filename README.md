@@ -14,7 +14,10 @@
 ![MediaPipe](https://img.shields.io/badge/mediapipe%20-yellow?style=for-the-badge&logo=medium&logoColor=white)
 
 ## :sunflower: Project Overview
-:exploding_head: Have you ever wished that you could create a whole universe with your hands? Seems impossible but you DEFINITELY CAN!! 
+:exploding_head: Have you ever wished that you could create a whole universe with your hands? 
+
+Seems impossible but you DEFINITELY CAN!! 
+
 The objective of this project is to deliver a simple and fun demonstration of our beautiful solar system in a special way. 
 
 ## :muscle: Motivation
