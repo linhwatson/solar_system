@@ -7,6 +7,9 @@ Seems impossible but you DEFINITELY CAN!!
 
 The objective of this project is to deliver a simple and fun demonstration of our beautiful solar system in a very special way. With your two hands, you can create anything, as big as our universe! 
 
+![demo](https://user-images.githubusercontent.com/111917573/214470684-f2592db7-db87-4b57-8fb3-5f4743f743b9.gif)
+
+
 ## :tickets: Tech Stack
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
