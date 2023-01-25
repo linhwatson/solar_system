@@ -5,7 +5,7 @@
 
 Seems impossible but you DEFINITELY CAN!! 
 
-The objective of this project is to deliver a simple and fun demonstration of our beautiful solar system in a special way. 
+The objective of this project is to deliver a simple and fun demonstration of our beautiful solar system in a very special way. With your two hands, you can create anything, as big as our universe! 
 
 ## :tickets: Tech Stack
 
@@ -15,8 +15,8 @@ The objective of this project is to deliver a simple and fun demonstration of ou
 ![MediaPipe](https://img.shields.io/badge/mediapipe%20-green?style=for-the-badge&logo=medium&logoColor=white)
 
 ## :muscle: Motivation
-This project was created within a 2-day period (less than 24 hours) as part of the Hack Reactor's curriculum.
-It was a really nice opportunity for me to get familiar with more technologies such as threeJS and mediapipe.
+This project was created within a 2-day period (less than 24 hours) as part of the Hack Reactor's curriculum. I chose to create a solar system because it was best suited for a fun and interactive application. It was a really nice opportunity for me to get familiar with a new technology such as Google Mediapipe. I have learned that ThreeJS and motion tracking is my new favorite recipe!
+
 I hope it will inspire you to also build something cool and/or learn something new. 
 
 ## :fire: Project Details
