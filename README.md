@@ -1,7 +1,7 @@
 # :ringed_planet: Visualizing our Solar System 
 
-## :sunflower: Project Overview
-:exploding_head: Have you ever wished that you could create a whole universe with your hands? 
+<!-- ## :sunflower: Project Overview -->
+## :exploding_head: Have you ever wished that you could create a whole universe with your hands? 
 
 Seems impossible but you DEFINITELY CAN!! 
 
